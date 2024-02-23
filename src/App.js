@@ -126,16 +126,17 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        
         <div style={{ width: "95vw", height: "65vh" }}>
           <Container fluid="xs">
             <Row>
               <Col xs={3}></Col>
-              <Col xs={6}>
+              <Col xs={6} style={{ background: "#aaaaaa", borderRadius: 4 }}>
                 <Keyword dict={allKeywords[currentIndex]} key={currentIndex} />
               </Col>
-              <Col xs={3} style={{paddingTop:"5vh"}}>
-                <Container style={{background:"#343a40"}}>
+              <Col xs={3} style={{ paddingTop: "5vh" }}>
+                <Container
+                  style={{ background: "#343a40", borderRadius: 4, padding: 4 }}
+                >
                   <Form.Label>Range</Form.Label>
                   <Form.Range
                     min={-5}
@@ -144,12 +145,12 @@ function App() {
                       setSpeed(e.target.value);
                     }}
                   />
-                  <Form.Label>Your Speed: {speedScale(speed)}</Form.Label>
-                  <Row>
-            <Button variant="primary" onClick={() => pause(!continued)}>
-            {continued ? "Duraklat" : "Başlat"}
-          </Button>
-            </Row>
+                  <Form.Label>Your Speed: {speedScale(speed)}</Form.Label><br/>
+                  
+                    <Button variant="primary" onClick={() => pause(!continued)}>
+                      {continued ? "Duraklat" : "Başlat"}
+                    </Button>
+                  
                 </Container>
               </Col>
             </Row>
