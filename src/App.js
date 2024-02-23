@@ -129,7 +129,19 @@ function App() {
         <div style={{ width: "95vw", height: "65vh" }}>
           <Container fluid="xs">
             <Row>
-              <Col xs={3}></Col>
+              <Col xs={3}>
+              <Container fluid="xs"
+                  style={{ background: "#343a40", borderRadius: 4, padding: 4 }}
+                >
+                  <Form.Label>Restart Menu</Form.Label><br/>
+                  
+                  <Button  variant="primary" onClick={() => setCurrentIndex(0)}>
+                      Restart
+                    </Button>
+                  
+                    
+                </Container>
+              </Col>
               <Col xs={6} style={{ background: "#aaaaaa", borderRadius: 4 }}>
                 <Keyword dict={allKeywords[currentIndex]} key={currentIndex} />
               </Col>
@@ -146,11 +158,9 @@ function App() {
                     }}
                   />
                   <Form.Label>Your Speed: {speedScale(speed)}</Form.Label><br/>
-                  
                     <Button variant="primary" onClick={() => pause(!continued)}>
                       {continued ? "Duraklat" : "Başlat"}
                     </Button>
-                  
                 </Container>
               </Col>
             </Row>
