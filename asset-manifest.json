@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/OxfordTopKeywords/static/css/main.e252de70.css",
+    "main.js": "/OxfordTopKeywords/static/js/main.121fc35d.js",
+    "static/js/453.c9755f04.chunk.js": "/OxfordTopKeywords/static/js/453.c9755f04.chunk.js",
+    "index.html": "/OxfordTopKeywords/index.html",
+    "main.e252de70.css.map": "/OxfordTopKeywords/static/css/main.e252de70.css.map",
+    "main.121fc35d.js.map": "/OxfordTopKeywords/static/js/main.121fc35d.js.map",
+    "453.c9755f04.chunk.js.map": "/OxfordTopKeywords/static/js/453.c9755f04.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e252de70.css",
+    "static/js/main.121fc35d.js"
+  ]
+}
